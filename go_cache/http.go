@@ -2,7 +2,7 @@ package go_cache
 
 import (
 	"fmt"
-	"go_cache/consistenthash"
+	"go_cache/go_cache/consistenthash"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -22,6 +22,11 @@ type HTTPPool struct {
 	mu          sync.Mutex
 	peers       *consistenthash.Map
 	httpGetters map[string]*httpGetter
+}
+
+func (p *HTTPPool) ServeHTTP(writer http.ResponseWriter, request *http.Request) {
+	//TODO implement me
+	panic("implement me")
 }
 
 type httpGetter struct {

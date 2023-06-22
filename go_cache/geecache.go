@@ -2,7 +2,7 @@ package go_cache
 
 import (
 	"fmt"
-	"go_cache/singleflight"
+	"go_cache/go_cache/singleflight"
 	"log"
 	"sync"
 )

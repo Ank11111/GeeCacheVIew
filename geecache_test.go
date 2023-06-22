@@ -1,7 +1,8 @@
-package go_cache
+package main
 
 import (
 	"fmt"
+	"go_cache/go_cache"
 	"log"
 	"testing"
 )
@@ -14,7 +15,7 @@ var db = map[string]string{
 
 func TestGet(t *testing.T) {
 	loadCounts := make(map[string]int, len(db))
-	gee := NewGroup("scores", 2<<10, GetterFunc(
+	gee := go_cache.NewGroup("scores", 2<<10, go_cache.GetterFunc(
 		func(key string) ([]byte, error) {
 			log.Println("[SlowDB] search key", key)
 			if v, ok := db[key]; ok {
