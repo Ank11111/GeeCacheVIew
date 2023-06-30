@@ -3,7 +3,7 @@ This is a project to help you learn go_cache from zero to one
 
 ### 目的及目标：
 
-​	本教程是对极客兔兔GeeCache的细致剖析，将作者没有讲解到的设计思想和go语言进阶用法再展开，致力于让仅了解go语言基础的gopher快速上手自己的第一个项目，并从中有所得。项目名GeeCacheView的灵感来自于C++17的string_view类，即 通过代理的思想，通过view而观其貌。
+​	本教程是对极客兔兔GeeCache的细致剖析，将作者没有讲解到的设计思想和go语言进阶用法再展开，致力于让仅了解go语言基础的gopher快速上手自己的第一个项目，并从中有所得。项目名GeeCacheView的灵感来自于C++17的string_view类，即 依据代理的思想，通过view而观其貌。
 
 ### 项目所学：
 
